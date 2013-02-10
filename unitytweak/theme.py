@@ -228,7 +228,7 @@ class Themesettings ():
         else:
             self.ui['check_show_menu'].set_active(False)
       
-# TODO : Find a clever way or set each one manually.
+# TODO: Find a clever way or set each one manually.
 # Do it the dumb way now. BIIIG refactoring needed later.
 
 
@@ -282,7 +282,8 @@ class Themesettings ():
 
     # Cursor
     def on_tree_cursor_theme_cursor_changed(self,udata=None):
-        if self.ui['tree_cursor_theme'].get_selection() is None:
+        cursortreesel = self.ui['tree_cursor_theme'].get_selection()
+        if cursortreesel is None:
             return
         cursorthemestore,iter = cursortreesel.get_selected()
         themepath=cursorthemestore.get_value(iter,1)
@@ -291,7 +292,7 @@ class Themesettings ():
 
     # Cursor Size
     def on_check_cursor_size_toggled(self, widget, udata = None):
-        if self.ui['check_cursor_size'].get_active() == True :
+        if self.ui['check_cursor_size'].get_active() == True:
             gsettings.interface.set_int('cursor-size', 48)
         else:
             gsettings.interface.set_int('cursor-size', 24)
@@ -450,4 +451,4 @@ class Themesettings ():
 if __name__ == '__main__':
 # Fire up the Engines
     Themesettings()
-# FIXME : Guaranteed to fail. Arguments mismatch.
+# FIXME: Guaranteed to fail. Arguments mismatch.
