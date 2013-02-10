@@ -136,7 +136,7 @@
                               <object class="GtkMenuItem" id="menuitem_compiz_workspace">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Workspace</property>
+                                <property name="label" translatable="yes">Workspace settings</property>
                                 <property name="use_underline">True</property>
                                 <signal name="activate" handler="on_menuitem_compiz_workspace_activate" swapped="no"/>
                               </object>
@@ -166,6 +166,15 @@
                                 <property name="label" translatable="yes">Hotcorners</property>
                                 <property name="use_underline">True</property>
                                 <signal name="activate" handler="on_menuitem_compiz_hotcorners_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuitem_compiz_additional">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Additional</property>
+                                <property name="use_underline">True</property>
+                                <signal name="activate" handler="on_menuitem_compiz_additional_activate" swapped="no"/>
                               </object>
                             </child>
                           </object>
@@ -217,6 +226,15 @@
                                 <property name="label" translatable="yes">Fonts</property>
                                 <property name="use_underline">True</property>
                                 <signal name="activate" handler="on_menuitem_theme_fonts_activate" swapped="no"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="menuitem_window_controls">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Window controls</property>
+                                <property name="use_underline">True</property>
+                                <signal name="activate" handler="on_menuitem_window_controls_activate" swapped="no"/>
                               </object>
                             </child>
                           </object>
@@ -336,7 +354,7 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="has_focus">True</property>
-                    <property name="receives_default">True</property>
+                    <property name="receives_default">False</property>
                     <property name="valign">center</property>
                     <property name="margin_left">12</property>
                     <property name="margin_top">6</property>
