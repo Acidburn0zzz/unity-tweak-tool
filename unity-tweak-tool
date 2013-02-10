@@ -230,6 +230,10 @@ class UnityTweak (dbus.service.Object):
         self.notebook.set_current_page(2)
         self.compizsettings.page.set_current_page(4)
 
+    def on_menuitem_compiz_additional_activate(self,udata):
+        self.notebook.set_current_page(2)
+        self.compizsettings.page.set_current_page(5)
+
     # ----- Appearance Settings Menu ----- #
     def on_menuitem_theme_system_activate(self,udata):
         self.notebook.set_current_page(3)
@@ -246,6 +250,10 @@ class UnityTweak (dbus.service.Object):
     def on_menuitem_theme_fonts_activate(self,udata):
         self.notebook.set_current_page(3)
         self.themesettings.page.set_current_page(3)
+
+    def on_menuitem_window_controls_activate(self,udata):
+        self.notebook.set_current_page(3)
+        self.themesettings.page.set_current_page(4)
 
     # ----- System Settings Menu ----- #
     def on_menuitem_desktop_icons_activate(self,udata):
