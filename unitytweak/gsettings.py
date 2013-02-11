@@ -70,7 +70,7 @@ def color_to_hash(c):
 
 # Sorted by function type and alphabetical order
 
-#bluetooth = canonical('indicator.bluetooth')
+bluetooth = canonical('indicator.bluetooth')
 datetime = canonical('indicator.datetime')
 hud = canonical('indicator.appmenu.hud')
 power = canonical('indicator.power')
