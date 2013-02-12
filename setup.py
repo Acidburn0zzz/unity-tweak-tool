@@ -123,6 +123,7 @@ DistUtilsExtra.auto.setup(
     description='A One-stop configuration tool for Unity',
     url='https://launchpad.net/unity-tweak-tool',
     data_files=[
+               ('share/dbus-1/services', ['unity-tweak-tool.service']),
                ('share/icons/gnome/scalable/apps/', glob.glob("data/media/scalable/*svg")),
                ('share/icons/hicolor/16x16/apps/', glob.glob("data/media/hicolor/16x16/apps/*.png")),
                ('share/icons/hicolor/24x24/apps/', glob.glob("data/media/hicolor/24x24/apps/*.png")),
